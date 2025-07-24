@@ -386,9 +386,8 @@
     <script>
         // Countdown Timer Function
         function updateCountdown() {
-            // Set launch date to 1 month from now
-            const launchDate = new Date();
-            launchDate.setMonth(launchDate.getMonth() + 1);
+            // Set launch date to 1 month from July 25, 2025
+            const launchDate = new Date(2025, 7, 25); // August 25, 2025 (month is 0-indexed)
             
             const now = new Date();
             const timeLeft = launchDate - now;
